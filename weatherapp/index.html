@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+		<div class="text">
+		
+        <h1>Weather Information</h1>
+		</div>
+        
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for a city..." oninput="handleSearch()">
+            <button id="searchButton" onclick="searchWeather()">Search</button>
+        </div>
+
+        <!-- Predefined City Buttons -->
+        <div class="buttons">
+            <button onclick="getWeather('New York')">New York</button>
+            <button onclick="getWeather('London')">London</button>
+            <button onclick="getWeather('Tokyo')">Tokyo</button>
+            <button onclick="getWeather('Colombo')">Colombo</button>
+            <button onclick="getWeather('Dubai')">Dubai</button>
+        </div>
+
+        <!-- Weather Information Display -->
+        <div id="weatherInfo" class="weather-info"></div>
+		<!-- Calendar Section -->
+        <div class="calendar">
+            <h2>Calendar</h2>
+            <table class="calendar-table">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+	 <div class="main-container">
+        <!-- GIF Section (Left side) -->
+        <div class="gif-container">
+            <img src="XXX.gif" alt="Weather GIF" class="gif-image">
+        </div>
+		
+    <script src="app.js"></script>
+</body>
+</html>
+    
